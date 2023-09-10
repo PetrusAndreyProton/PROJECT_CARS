@@ -50,6 +50,12 @@ class Battery(object):
 
 
 class ElectricCar(Car):
+    """Represents machine aspects specific to electric vehicles."""
+
     def __init__(self, make, model, year):
+        """
+        Initializes parent class attributes.
+        Then initializes attributes specific to the electric vehicle.
+        """
         super().__init__(make, model, year)
         self.battery = Battery()
